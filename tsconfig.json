@@ -1,6 +1,15 @@
 {
     "compilerOptions": {
+        "esModuleInterop": true,
         "target": "ES5",
+        "lib": [
+            "esnext",
+            "DOM"
+        ],
+        "jsx": "react",
+        "types": [
+            "react"
+        ],
         "module": "CommonJS",
         "declaration": true,
         "outDir": "./lib",
