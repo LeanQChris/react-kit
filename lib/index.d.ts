@@ -1,3 +1,1 @@
-export declare class StringtoLowercase {
-    static ToLower(stringName: string): void;
-}
+export * from './ui/index';
