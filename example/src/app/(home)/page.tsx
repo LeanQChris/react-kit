@@ -4,6 +4,7 @@ import { Suspense, useEffect } from "react";
 import { Button, Timer } from "@techyatraa/react-kit"
 
 import { fetchTodoById } from "./data/api";
+import { ImageUpload } from "@techyatraa/react-kit";
 
 export default function Home() {
 
@@ -17,6 +18,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Button title="Button"
         onClick={() => alert("asd")}
+      />
+      <ImageUpload
+        onChange={(file: File) => {
+          console.info(file)
+        }}
+        label="Choose image"
+        placeholderImage="https://img.freepik.com/premium-vector/add-icon-add-post-video-photo-vector-images_292645-294.jpg"
       />
 
       <Suspense>

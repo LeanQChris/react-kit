@@ -3,7 +3,8 @@ import "./src/styles/tailwind.css";
 // ui
 export {
     IButton, Button,
-    Timer
+    Timer,
+    ImageUpload
 } from './src/ui/index'
 // ui
 

@@ -3,4 +3,6 @@ import Button from './button/button';
 
 import Timer from './timer/timer';
 
-export { Button, Timer }
+import ImageUpload from './upload/upload';
+
+export { Button, Timer, ImageUpload }
