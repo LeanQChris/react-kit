@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc &&  npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/src/styles/tailwind.css --watch"
   },
   "keywords": [],
   "author": "Chris Thapa",

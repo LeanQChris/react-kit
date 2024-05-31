@@ -1,4 +1,6 @@
 export { IButton } from './button/button.interface';
 import Button from './button/button';
 
-export { Button }
+import Timer from './timer/timer';
+
+export { Button, Timer }

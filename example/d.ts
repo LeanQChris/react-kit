@@ -1,1 +1,1 @@
-declare module "techyatraa-react-kit"
+declare module "@techyatraa/react-kit"
