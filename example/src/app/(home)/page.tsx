@@ -3,13 +3,13 @@
 import { Suspense, useEffect } from "react";
 import { Button, Timer } from "@techyatraa/react-kit"
 
-import { fetchTodoById } from "./data/api";
+import { fetchEventDataBySlug, fetchTodoById } from "./data/api";
 import { ImageUpload } from "@techyatraa/react-kit";
 
 export default function Home() {
 
   useEffect(() => {
-    fetchTodoById(1);
+    fetchEventDataBySlug("fifa-world-cup-2026");
   }, []);
 
   let deadline = new Date("2024-6-12");

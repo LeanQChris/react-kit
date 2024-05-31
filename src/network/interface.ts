@@ -8,6 +8,13 @@ export interface INetworkConfig {
     maxBodyLength?: number
 }
 
-export interface INetworkClient{
-    config: INetworkConfig
+export interface INetworkClient {
+    config: INetworkConfig,
+}
+
+export interface BaseResponse<T, E> {
+    data?: T,
+    statusCode?: number,
+    message: string,
+    error?: E
 }
